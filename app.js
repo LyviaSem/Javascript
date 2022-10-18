@@ -55,7 +55,29 @@ function capitalize(str){
             newString += " ";
         }
         return newString;
-     
+    }
+    else{
+        return null;
+    }
+}
+
+function pascalCase(str){
+    let newString = "";
+
+    if ( typeof str == 'string'){
+        const myArray= str.split(" ");
+
+        for(i = 0; i < myArray.length; i++){
+            for(j = 0; j < myArray[i].length; j++){
+                if(j == 0){
+                    newString += myArray[i][j].toUpperCase();
+                }
+                else{
+                    newString += myArray[i][j];
+                }
+            }
+        }
+        return newString;
     }
     else{
         return null;
@@ -65,3 +87,4 @@ function capitalize(str){
 console.log(revert("Hello I'm Robert !"));
 console.log(ucFirst("hello"));
 console.log(capitalize("hello i’m robert"))
+console.log(pascalCase("sentence in pascalCase"));
