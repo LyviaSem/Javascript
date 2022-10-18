@@ -110,8 +110,35 @@ function  palindrome(str){
     }
 }
 
-console.log(revert("Hello I'm Robert !"));
+function  findLongestWord(str){
+    let compte;
+    let comparaison = 0;
+    let mot = "";
+
+    if ( typeof str == 'string'){
+        const myArray= str.split(" ");
+
+        for(i = 0; i < myArray.length; i++){
+            compte = 0;
+            for(j = 0; j < myArray[i].length; j++){
+                compte += 1;
+            }
+
+            if(compte > comparaison){
+                comparaison = compte;
+                mot =myArray[i];
+            }
+        }
+        return mot;
+    }
+    else{
+        return null;
+    }
+}
+
+/*console.log(revert("Hello I'm Robert !"));
 console.log(ucFirst("hello"));
 console.log(capitalize("hello i’m robert"))
 console.log(pascalCase("sentence in pascalCase"));
-console.log(palindrome("kayak"));
+console.log(palindrome("kayak"));*/
+console.log(findLongestWord("Le chemin le plus cours n'est pas toujours le meilleur"));
