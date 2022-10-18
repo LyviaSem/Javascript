@@ -18,4 +18,8 @@ function revert(str){
     }
 }
 
+function ucFirst(word){
+
+}
+
 console.log(revert("Hello I'm Robert !"));
