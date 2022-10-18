@@ -1,7 +1,7 @@
 function revert(str){
     let newString ='';
 
-    if (str != null){
+    if ( typeof str == 'string'){
         const myArray= str.split(" ");
 
         for(i = myArray.length-1; i>=0; i--){
@@ -19,7 +19,25 @@ function revert(str){
 }
 
 function ucFirst(word){
-
+    let newWord ="";
+    
+    if ( typeof word == 'string'){
+        for (i = 0; i <= word.length; i++){
+            if (i == 0){
+                newWord += word.charAt(i).toUpperCase();
+            }
+            else{
+                newWord += word.charAt(i);
+            }
+        }
+        
+        return newWord
+    }
+    else{
+        return null;
+    }
+    
 }
 
-console.log(revert("Hello I'm Robert !"));
+//console.log(revert("Hello I'm Robert !"));
+console.log(ucFirst("hello"));
