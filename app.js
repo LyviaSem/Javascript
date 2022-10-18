@@ -1,6 +1,5 @@
 function revert(str){
     let newString ='';
-    let newPhrase = "";
 
     if (str != null){
         const myArray= str.split(" ");
