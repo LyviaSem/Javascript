@@ -84,7 +84,34 @@ function pascalCase(str){
     }
 }
 
+function  palindrome(str){
+    let lettre = "";
+    let Dlettre ="";
+
+    if ( typeof str == 'string'){
+
+        for(i = 0; i < str.length; i++){
+            if(i == 0){
+                lettre = str.charAt(i);
+            }
+            else{
+                Dlettre = str.charAt(i);
+            }
+        }
+        if(lettre == Dlettre){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    else{
+        return null;
+    }
+}
+
 console.log(revert("Hello I'm Robert !"));
 console.log(ucFirst("hello"));
 console.log(capitalize("hello i’m robert"))
 console.log(pascalCase("sentence in pascalCase"));
+console.log(palindrome("kayak"));
