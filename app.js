@@ -136,9 +136,46 @@ function  findLongestWord(str){
     }
 }
 
+function  leet(str){
+    let mot = "";
+
+    if ( typeof str == 'string'){
+
+        for(i = 0; i < str.length; i++){
+            switch(str.charAt(i)){
+                case 'a': 
+                     mot += "4";
+                    break;
+                case 'e': 
+                    mot += "3";
+                    break;
+                case 'i': 
+                    mot += "1";
+                    break;
+                case 'o': 
+                    mot += "0";
+                    break;
+                case 'u': 
+                    mot += "(_)";
+                    break;
+                case 'y': 
+                    mot += "7";
+                    break;
+                default:
+                    mot += str.charAt(i);
+            }
+        }
+        return mot;
+    }
+    else{
+        return null;
+    }
+}
+
 /*console.log(revert("Hello I'm Robert !"));
 console.log(ucFirst("hello"));
 console.log(capitalize("hello i’m robert"))
 console.log(pascalCase("sentence in pascalCase"));
 console.log(palindrome("kayak"));*/
-console.log(findLongestWord("Le chemin le plus cours n'est pas toujours le meilleur"));
+//console.log(findLongestWord("Le chemin le plus cours n'est pas toujours le meilleur"));
+console.log(leet("anaconda"));
