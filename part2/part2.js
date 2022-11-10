@@ -158,6 +158,7 @@ const pgcd = (a,b) => ((a%=b)==0)? b: pgcd(b,a);
 const lcmFunc = (a, b) => a * b / pgcd(a, b);
 
 const merge = (obj1,obj2) => console.log(Object.assign({}, obj1, obj2));
+
 const students = [ { name: "Dupont", cours: [ 1, 3, 5 ] }, { name: "Lea", cours: [ 2, 4, 11] }, { name: "Charles", cours: [1] } ];
 const courses = [{id: 1, name: "JS" }, { id: 2, name: "PHP" }, { id: 3, name: "C#" }, { id: 4, name: "F#" }, { id: 5, name: "CSS" }];
 

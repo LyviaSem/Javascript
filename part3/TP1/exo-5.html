@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Mon Site</h1> 
+        <p>Le site web créé par moi</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Web Tuto</a></li>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Me contacter</a></li>
+        </ul>
+    </nav>
+    <section>
+        <aside>
+            <h1>À propos de ce site</h1>
+            <p>C'est mon site web et il est trop bien.</p>
+        </aside>
+        <article>
+            <h1>En savoir plus</h1>
+            <p>je mange du poisson au petit déjeuner</p>
+        </article>
+    </section>
+
+    <script>
+        var tab = document.querySelectorAll("p");
+        for(i=0; i<tab.length; i++){
+            tab[i].remove();
+        }
+    </script>
+
+</body>
+</html>
